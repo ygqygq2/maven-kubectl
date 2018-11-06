@@ -3,7 +3,7 @@ FROM maven:3.6.0-jdk-8-alpine
 
 LABEL maintainer "29ygq@sina.com"
 
-ENV KUBE_VERSION="1.12.1" 
+ENV KUBE_VERSION="v1.12.1" 
 
 # https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl
 RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/${KUBE_VERSION}/bin/linux/amd64/kubectl -o /usr/local/bin/kubectl \
